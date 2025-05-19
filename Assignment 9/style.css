@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body *{
+    box-sizing: border-box;
+    text-align: center;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.title {
+    font-size: 4em; 
+    font-weight: 900; 
+    text-align: center; 
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-family: 'Arial Black', sans-serif;
+    word-spacing: -10px;
+}
+
+#quote-box {
+    margin-bottom: 20px;
+}
+
+#quote {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#author {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #777;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    width: 250px;
+    height: 100px;
+    border: solid black 2px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: green;
+}
