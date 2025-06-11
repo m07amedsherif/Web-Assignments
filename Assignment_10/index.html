@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="icon" href="images/10001.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section>
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-center">
+                    <h1 class="title">Bookmarker</h1>
+                </div>
+            </div>
+            <hr class="mt-5 mb-3 dotted-hr">
+
+            <div>
+                <h4 class="gradient-text m-auto mb-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h4>
+
+                <div class="input m-auto w-95">
+                    <label for="name" class="mt-4">
+                        <p class="mb-1"><i class="fa-solid fa-book-bookmark"></i> <b>site Name</b> </p>
+                    </label>
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Enter site name" required>
+
+                    <label for="link" class="mt-4">
+                        <p class="mb-1"><i class="fa-solid fa-book-bookmark"></i> <b>site URL</b> </p>
+                    </label>
+                    <input type="url" id="link" class="form-control" placeholder="Enter site name" required>
+                    <div class=""></div>
+                    <div class="text-center">
+                        <button class="btn btn-submit mt-4 mx-auto" id="addBookmark" onclick="validate()">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-3 dotted-hr">
+
+            <div class="w-100 bg-white ">
+
+                <div class="border-bottom row text-center">
+                    <p class="my-2 fw-bold col-3">Index</p>
+                    <p class="my-2 fw-bold col-3">Website Name</p>
+                    <p class="my-2 fw-bold col-3">Visit</p>
+                    <p class="my-2 fw-bold col-3">Delete</p>
+                </div>
+
+                <div id="print">
+                    <!-- Bookmarks will be printed here -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
